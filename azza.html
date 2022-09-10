@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>form</title>
+        <style>
+            
+        </style>
+    </head>
+    <body>
+
+<form method="post">
+       <label>User Name</label>
+        <input id="username" type="text" >
+        <label>Password</label>
+        <input id = "password" type="password">
+        <button onclick="store()" type="button">Store</button>
+
+</form>
+
+
+<script>
+
+function store(){
+     var inputUserName= document.getElementById("username");
+
+     localStorage.setItem("username", inputUserName.value);
+     location.href = "welcome.html"
+    }
+
+</script>
+    </body>
+</html>
